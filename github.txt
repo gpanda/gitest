@@ -1,3 +1,7 @@
+Must create a repository on github before or else "git push -u origin master"
+doesn't work. Does this make any sense?
+
+
 Create a new repository on the command line
 
 touch README.md
@@ -10,3 +14,4 @@ Push an existing repository from the command line
 
 git remote add origin git@github.com:gpanda/gitest.git
 git push -u origin master
+
