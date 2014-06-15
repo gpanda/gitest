@@ -13,7 +13,7 @@ branch
   + `Git object data for multiple commits`_
 
 * A branch is just a lightweight movable pointer to a commit object, usually
-  points to the last commit, every time when commit, it moves forward
+  points to the last commit, every time when commits, it moves forward
   automatically.
 
   `Branch pointing into the commit data’s history`_
@@ -22,8 +22,8 @@ branch
 
   `git branch testing`_
 
-* A HEAD is a pointer of pointer, pointing to the local branch the user is
-  currently on.
+* A HEAD is a pointer of pointer, pointing to the local branch the repository
+  is currently on.
 
   `HEAD file pointing to the branch you’re on`_
 
