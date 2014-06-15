@@ -56,6 +56,26 @@ merge
   doing the merge has to figure out the best merge base for themselves. This
   makes merging a heck of a lot easier in Git than in these other systems.
 
+* handle conflicts
+
+  Automatic merge failed; fix conflicts and then commit the result.
+
+  git status
+
+  Git adds standard conflict-resolution markers to the files that have
+  conflicts, so you can open them manually and resolve those conflicts, or use
+  (git mergetool).
+
+  conflict section looks like:
+
+  <<<<<<< HEAD (current branch)
+  abcd
+  =======
+  1234
+  >>>>>>>> <branch-to-merge>
+
+  After fix the conflict, git add and git commit.
+
 see [ref.2]_
 
 rebase
