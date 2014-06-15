@@ -136,20 +136,24 @@ nvie branch model(workflow)
    http://git-scm.com/figures/18333fig0302-tn.png
 .. _`Branch pointing into the commit data’s history`:
    http://git-scm.com/figures/18333fig0303-tn.png
+
 .. _`a successful git branching model`:
    http://nvie.com/posts/a-successful-git-branching-model/
 .. _`practice in detail on gitflow workflow`:
    https://www.atlassian.com/git/workflows#!workflow-gitflow
+
 .. _`git branch testing`: http://git-scm.com/figures/18333fig0304-tn.png
 .. _`HEAD file pointing to the branch you’re on`:
    http://git-scm.com/figures/18333fig0305-tn.png
 .. _`git checkout testing`: http://git-scm.com/figures/18333fig0306-tn.png
 .. [ref.1] http://git-scm.com/book/en/Git-Branching-What-a-Branch-Is
+
 .. _`ff:before merge`: http://git-scm.com/figures/18333fig0313-tn.png
 .. _`ff:after merge`: http://git-scm.com/figures/18333fig0314-tn.png
 .. _`basic:before merge`: http://git-scm.com/figures/18333fig0314-tn.png
 .. _`basic:after merge`: http://git-scm.com/figures/18333fig0317-tn.png
 .. [ref.2] http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging
+
 .. _`basic:before rebase`: http://git-scm.com/figures/18333fig0327-tn.png
 .. _`basic:after rebase`: http://git-scm.com/figures/18333fig0329-tn.png
 .. _`Fast-forwarding the master branch. Basic.`:
@@ -161,3 +165,4 @@ nvie branch model(workflow)
 .. _`Rebasing your server branch on top of your master branch`:
    http://git-scm.com/figures/18333fig0334-tn.png
 .. [ref.3] http://git-scm.com/book/en/Git-Branching-Rebasing
+
