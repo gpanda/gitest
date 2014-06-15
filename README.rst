@@ -58,6 +58,51 @@ merge
 
 see [ref.2]_
 
+rebase
+------
+* basic rebase
+
+  `basic:before rebase`_ and `basic:after rebase`_
+
+  git checkout experiment
+  git rebase master
+
+  It works by going to the common ancestor of the two branches (the one you’re
+  on and the one you’re rebasing onto), getting the diff introduced by each
+  commit of the branch you’re on, saving those diffs to temporary files,
+  resetting the current branch to the same commit as the branch you are
+  rebasing onto, and finally applying each change in turn.
+
+  At this point, you can go back to the master branch and do a fast-forward
+  merge. `Fast-forwarding the master branch. Basic.`_
+
+* advance rebase
+
+  `advance:before rebase`_ and `advance:after rebase`_
+
+  git rebase --onto master server client
+
+  Check out the client branch, figure out the patches from the common ancestor
+  of the client and server branches, and then replay them onto master.
+
+  Now you can `fast-forward your master branch. Advance.`_
+
+  git checkout master
+  git merge client
+
+* git rebase [basebranch] [topicbranch]
+
+  You can rebase a topic branch onto a base branch without having to check it
+  out first by running git rebase [basebranch] [topicbranch] — which checks out
+  the topic branch for you and replays it onto the base branch.
+  `Rebasing your server branch on top of your master branch`_
+
+  git rebase master server
+
+* **Do not rebase commits that you have pushed to a public repository.**
+
+see [ref.3]_
+
 nvie branch model(workflow)
 ---------------------------
 1. `a successful git branching model`_ (gitflow workflow)
@@ -85,4 +130,14 @@ nvie branch model(workflow)
 .. _`basic:before merge`: http://git-scm.com/figures/18333fig0314-tn.png
 .. _`basic:after merge`: http://git-scm.com/figures/18333fig0317-tn.png
 .. [ref.2] http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging
-
+.. _`basic:before rebase`: http://git-scm.com/figures/18333fig0327-tn.png
+.. _`basic:after rebase`: http://git-scm.com/figures/18333fig0329-tn.png
+.. _`Fast-forwarding the master branch. Basic.`:
+   http://git-scm.com/figures/18333fig0330-tn.png
+.. _`advance:before rebase`: http://git-scm.com/figures/18333fig0331-tn.png
+.. _`advance:after rebase`: http://git-scm.com/figures/18333fig0332-tn.png
+.. _`fast-forward your master branch. Advance.`:
+   http://git-scm.com/figures/18333fig0333-tn.png
+.. _`Rebasing your server branch on top of your master branch`:
+   http://git-scm.com/figures/18333fig0334-tn.png
+.. [ref.3] http://git-scm.com/book/en/Git-Branching-Rebasing
