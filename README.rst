@@ -127,7 +127,7 @@ nvie branch model(workflow)
 ---------------------------
 1. `a successful git branching model`_ (gitflow workflow)
 2. `practice in detail on gitflow workflow`_
-
+3. `why-arent-you-using-git-flow`_
 
 
 .. _`Single commit repository data`:
@@ -141,6 +141,8 @@ nvie branch model(workflow)
    http://nvie.com/posts/a-successful-git-branching-model/
 .. _`practice in detail on gitflow workflow`:
    https://www.atlassian.com/git/workflows#!workflow-gitflow
+.. _`why-arent-you-using-git-flow`:
+   http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/
 
 .. _`git branch testing`: http://git-scm.com/figures/18333fig0304-tn.png
 .. _`HEAD file pointing to the branch you’re on`:
