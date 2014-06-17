@@ -129,6 +129,32 @@ nvie branch model(workflow)
 2. `practice in detail on gitflow workflow`_
 3. `why-arent-you-using-git-flow`_
 
+workflow on practice
+--------------------
+
+* Feature Workflow
+
+ git checkout -b feature-* develop
+
+ ..making changes in the working tree
+
+ git status
+ git add <changed files>
+ git commit [-m "<msg>"]
+ ..or
+ git commit -a
+
+ git checkout develop
+ git pull origin develop
+ git checkout feature-*
+ git rebase -i develop
+
+ git checkout develop
+ git merge --no-ff feature-*
+ git push origin develop
+
+ git branch -d feature-*
+
 
 .. _`Single commit repository data`:
    http://git-scm.com/figures/18333fig0301-tn.png
